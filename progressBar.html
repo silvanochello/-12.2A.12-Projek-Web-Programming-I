@@ -1,0 +1,119 @@
+<!doctype html><html><head> 
+  <title> Scroll Progress Bar </title> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+ /* margin: 0;
+  padding: 0;*/
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color:#001a1a ;
+}
+section{
+  padding: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+section h3{
+  font-size: 3.5em;
+  color: #00b3b3;
+  }
+  
+  h3{
+     text-transform: uppercase ;
+     border: 5px dashed;
+     text-align : center;
+     padding: 6px;
+  }
+
+section p{
+  font-size: 2.0em;
+  color:  rgba(0, 255, 255);
+  }
+
+#scrollbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: rgba(255,255,255,0.05);
+  animation: animate 5s linear infinite;
+  
+} 
+
+#preogressbar{
+  position : fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 50%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+ animation: animate 5s linear infinite;
+  } 
+  
+  #preogressbar: before, 
+  #preogressbar: after {
+   content:  ' ' ;
+   position: absolute;
+   top: 0;
+   right: 0;
+   width : 100%;
+   height: 100%;
+   background: linear-gradient(to top, #008aff, #00ffe7);
+   filter: blur(10px);
+     }
+      
+ #preogressbar: after{
+   filter : blur(30px);
+ }
+   
+@keyframes animate{
+  0%, 100%
+    {
+      filter: hue-rotate(0deg);
+     }
+     50%{
+       filter: hue-rotate(360deg);
+     }
+      }
+     
+     ::-webkit-scrollbar{
+       
+     }
+     #percentage{
+       position: fixed;
+       top: 50%;
+       translate: transformY(-50%) rotateX(180deg) rotateY(180deg) ;
+       right: 15px;
+       color : #ccffff;
+       font-size: 2em;
+       writing-mode: vertical-rl;
+       text-orientation: sideways;
+       
+     }</style></head> 
+ <body> 
+  <div id="preogressbar"></div> 
+  <div id="scrollpath"></div> 
+  <div id="percentage"></div> 
+  <section> 
+   <div class="mycontent"> 
+    <h3> <span> Scroll Through </span></h3> 
+    <img src="https://picsum.photos/seed/{seed}picsum/740/400"> 
+    <br> 
+    <p>“Even if you’re on the right track, you’ll get run over if you just sit there.” – Will Rogers “When I hear somebody sigh, ‘Life is hard,’ I am always tempted to ask, ‘Compared to what?’” – Sydney Harris “Nurture your mind with great thoughts. To believe in the heroic makes heroes.” – Benjamin Disraeli “Look at the sparrows; they do not know what they will do in the next moment. Let us literally live from moment to moment.” – Mahatma Gandhi “Luck is a dividend of sweat. The more you sweat, the luckier you get.” – Ray Kroc “When I let go of what I am, I become what I might be.” – Lao Tzu “You may find the worst enemy or best friend in yourself.” – English Proverb “Courage is the first of human qualities because it is the quality which guarantees all others.” – Winston Churchill <br> <img src="https://picsum.photos/id/740/740/400"> <br> “Live each day as if your life had just begun.” – Johann Wolfgang Von Goethe “Every truth passes through three stages before it is recognized. In the first, it is ridiculed. In the second, it is opposed. In the third, it is regarded as self evident.” – Arthur Schopenhauer “The difference between a successful person and others is not lack of strength not a lack of knowledge but rather a lack of will.” – Vince Lombardi “If not us, who? If not now, when?” – John F. Kennedy “Don’t worry about failures, worry about the chances you miss when you don’t even try.” – Jack Canfield <br> <img src="https://picsum.photos/id/1011/740/400"> <br> “Though no one can go back and make a brand new start, anyone can start from now and make a brand new ending.” – Carl Bard “Some men see things as they are and say why – I dream things that never were and say why not.” – George Bernard Shaw “The journey of a thousand miles begins with one step.” – Lao Tzu “Every noble work is at first impossible.” – Thomas Carlyle “Do not let what you cannot do interfere with what you can do.” – John Wooden “Nobody ever wrote down a plan to be broke, fat, lazy, or stupid. Those things are what happen when you don’t have a plan.” – Larry Winget “Eighty percent of success is showing up.” – Woody Allen “I have never in my life learned anything from any man who agreed with me.” – Dudley Field Malone “I am thankful for all of those who said NO to me. It’s because of them I’m doing it myself.” – Albert Einstein “We become what we think about.” – Earl Nightingale “Luck is a dividend of sweat. The more you sweat, the luckier you get.” – Ray Kroc “When I let go of what I am, I become what I might be.” – Lao Tzu “You may find the worst enemy or best friend in yourself.” – English Proverb “Courage is the first of human qualities because it is the quality which guarantees all others.” – Winston Churchill Van Gough quote “Whoever loves much, performs much, and can accomplish much, and what is done in love is done well” “Whoever loves much, performs much, and can accomplish much, and what is done in love is done well.” – Vincent Van Gogh “The great thing in this world is not so much where you stand, as in what direction you are moving.” – Oliver Wendell Holmes “Live each day as if your life had just begun.” – Johann Wolfgang Von Goethe “Every truth passes through three stages before it is recognized. In the first, it is ridiculed. In the second, it is opposed. In the third, it is regarded as self evident.” – Arthur Schopenhauer <br> <img src="https://picsum.photos/id/1012/740/400"> <br> “The difference between a successful person and others is not lack of strength not a lack of knowledge but rather a lack of will.” – Vince Lombardi Jim Rohn inspirational quote “Either you run the day, or the day runs you” “Either you run the day, or the day runs you.” – Jim Rohn “If not us, who? If not now, when?” – John F. Kennedy “Don’t worry about failures, worry about the chances you miss when you don’t even try.” – Jack Canfield “Though no one can go back and make a brand new start, anyone can start from now and make a brand new ending.” – Carl Bard “Some men see things as they are and say why – I dream things that never were and say why not.” – George Bernard Shaw Inspiring quote “Life has two rules: #1 Never quit #2 Always remember rule # 1” “Life has two rules: #1 Never quit #2 Always remember rule # 1.” – Unknown “The only way of finding the limits of the possible is by going beyond them into the impossible.” – Arthur C. Clarke “Speak less than you know; have more than you show.” – William Shakespeare “Do not go where the path may lead, go instead where there is no path and leave a trail.” – Ralph Waldo Emerson “Education costs money. But then so does ignorance.” – Sir Claus Moser “Many of life’s failures are experienced by people who did not realize how close they were to success when they gave up” “Many of life’s failures are experienced by people who did not realize how close they were to success when they gave up.” – Thomas Edison “The journey of a thousand miles begins with one step.” – Lao Tzu “Every noble work is at first impossible.” – Thomas Carlyle <br> <img src="https://picsum.photos/id/1013/740/400"> <br> “Do not let what you cannot do interfere with what you can do.” – John Wooden “Nobody ever wrote down a plan to be broke, fat, lazy, or stupid. Those things are what happen when you don’t have a plan.” – Larry Winget Joe Clark inspirational quote “Defeat is not bitter unless you swallow it” “Defeat is not bitter unless you swallow it.” – Joe Clark “Rule #1 of life. Do what makes YOU happy.” – Unknown “It is not enough to aim, you must hit.” – Italian Proverb Joshua Marine inspirational quote “Challenges are what make life interesting and overcoming them is what makes life meaningful” “Challenges are what make life interesting and overcoming them is what makes life meaningful.” – Joshua J. Marine “Every strike brings me closer to the next home run.” – Babe Ruth “An obstacle is often a stepping stone.” – Prescott “I am not a product of my circumstances. I am a product of my decisions.” – Stephen Covey “Our lives begin to end the day we become silent about things that matter.” – Martin Luther King Jr. “Keep away from people who try to belittle your ambitions. Small people always do that, but the really great makes you feel that you, too, can become great” “Keep away from people who try to belittle your ambitions. Small people always do that, but the really great makes you feel that you, too, can become great.” – Mark Twain “Eighty percent of success is showing up.” – Woody Allen “I have never in my life learned anything from any man who agreed with me.” – Dudley Field Malone “I am thankful for all of those who said NO to me. It’s because of them I’m doing it myself.” – Albert Einstein “We become what we think about.” – Earl Nightingale Buddha inspirational quote <br> <img src="https://picsum.photos/id/1014/740/400"> <br> “The mind is everything. What you think you become” “The mind is everything. What you think you become.” – Buddha Reply Franklin Solomon AUGUST 23, 2017 AT 5:28 PM “Don’t try to score first mark,try to score some more marks” Franklin Solomon. Reply Pradeep Junghare AUGUST 26, 2017 AT 4:17 PM Rough Roads are important in life, they “reminds and teaches” the Value of Smoother times. Reply Rekha SEPTEMBER 22, 2017 AT 9:20 AM wonderful quotes. Really nice ,some time a person is sad and fed up from life but after reading your quotes he /she will filled with courage and motivation. its heart touching .List of quotes are good ,thanks for sharing.Its helpful to motivate someone you lost his path of life. Thanks Reply ashvini patil DECEMBER 15, 2017 AT 4:07 PM thanks for sharing Reply JudeIyke JANUARY 30, 2018 AT 8:11 PM “Dont strike because you can,but because you have a target” …judeiyke… Reply Maleeha Saeed APRIL 21, 2018 AT 5:45 PM A great collection of inspirational quotes ever. Thanks for sharing such an amazing and meaningful quotes collection stuff. Reply Sohit JUNE 21, 2018 AT 4:39 PM Amazing Collection With Cool Images Reply dev yadav JULY 6, 2018 AT 1:25 PM hey Thanks for sharing wonderful post..its amazing..!! Reply Ranjeet Singh JULY 13, 2018 AT 7:01 AM Very Good inspirational quotes, you have shared. Your all list of quotes are good, thanks for sharing. Its helpful to motivate me. Thanks a lot. Reply cendra AUGUST 2, 2018 AT 3:23 AM powerful quotes indeed…. Reply Laxman SINGH AUGUST 18, 2018 AT 1:33 AM amazing thoughts &gt;&gt;&gt;&gt; expressed life and work Reply Kashif Hussain OCTOBER 7, 2018 AT 9:14 AM Very nice and inpirational quotes, i refresh my life after ready these quotes thank you 🙂 Reply Niazi NOVEMBER 13, 2018 AT 12:03 PM Best inspirational quotes, huge collection of quotes, i love all these. after reading these, i am pumped UP. <br> <img src="https://picsum.photos/id/1015/740/400"> <br> 🙂 Reply Raja sharma NOVEMBER 25, 2018 AT 5:32 AM Keep inspiring every one Reply Raja sharma NOVEMBER 28, 2018 AT 12:53 PM Nice quotes Reply Motivationals DECEMBER 4, 2018 AT 7:20 PM Awesome inspirational quotes for anyone, from perfect angles of life. And positive to the last letter. Kudos. Reply Hannah Joy DECEMBER 14, 2018 AT 1:29 AM Useful quotes and a great collection of inspiring quotes. Reply Richa Goyal DECEMBER 17, 2018 AT 1:55 AM Nice quotes…thanks Reply Adam Gilbert DECEMBER 27, 2018 AT 7:07 AM A great collection of inspiring quotes. Good work dear Reply Triaha JANUARY 4, 2019 AT 9:24 AM Good thoughts Reply Kanhiya Lal JANUARY 25, 2019 AT 1:03 PM Great collection of quotes..i love it..keep going like this my friend. Reply Jivansutra Suvichar FEBRUARY 25, 2019 AT 1:46 AM Thanks for these great and inspirational thoughts of great minds. The positive thoughts of the great people not only motivates us to forward in life but they also shed the light when we are in a state of gloom. I like this famous one – “To be a star you must shine your own light, follow your own path and not be afraid of the darkness, for that is when stars shine brightest.” Reply Endurance FEBRUARY 28, 2019 AT 2:09 PM Wow,this is very great and interesting post Reply tamanna APRIL 1, 2019 AT 9:07 AM very nice, i really like it Reply Cori APRIL 10, 2019 AT 6:36 PM Love these quotes. May we share them with FB friends with proper attribution to you? 🙂 Reply Manisha bhatt APRIL 20, 2019 AT 6:20 AM Very nice quotes. Anyone can get inspired by just reading this post. Reply arpit MAY 8, 2019 AT 3:44 AM VERY NICE QUOTES Reply bipin kuva MAY 13, 2019 AT 7:56 AM This motivational quotes are useful in real life. i like your website Reply Arun MAY 14, 2019 AT 10:32 AM Nice Quote Reply motivational quotes in hindi MAY 15, 2019 AT 11:52 AM This post is really nice . To inspiration every people.. Reply Raj MAY 26, 2019 AT 1:26 AM Awesome Positive Inspirational Life Quotes Reply Sahil Mittal JUNE 1, 2019 AT 5:08 AM These inspirational quotes are really amazing and awesome. I really liked these quotes Reply kalpana chauhan JUNE 3, 2019 AT 12:52 PM Heart touching &amp; true lines on life thank you for an amazing lines Reply jim fowler JUNE 8, 2019 AT 9:17 AM Dream But Don’t Seep Reply Dilpreet Singh JULY 4, 2019 AT 9:43 AM I never stop when I get tired,I stop when I achieve my goal Reply Magadla Sinawo JULY 13, 2019 AT 11:55 AM ” I am not what you think I am, I am what I think you think I am” Reply Tannu JULY 23, 2019 AT 10:24 AM The mind is everything . What you think you become . Buddha Reply Krishna JULY 25, 2019 AT 7:40 AM The motivational quotes that you shared here in this article are really awesome. I really appreciate the author and thanks him/her to share such amazing quotes Reply justin AUGUST 4, 2019 AT 11:09 AM Wonderful quotes. Thanks for posting it. Keep motivating people through your generosity. God bless you. Reply Adekunle SEPTEMBER 6, 2019 AT 4:52 PM I really love this Reply Rahul SEPTEMBER 22, 2019 AT 9:44 PM The mind is Everything what you think you become Reply Kalo OCTOBER 8, 2019 AT 12:32 PM I really enjoyed the inspiring quotes. Reply Prasad Surase OCTOBER 23, 2019 AT 1:46 AM I was checking constantly this blog and I’m impressed! Very helpful information specifically the last part of the quotes. so inspiring for me. Reply Solomon David DECEMBER 15, 2019 AT 11:00 AM Soul inspiring quotes, I love the one that says, “Nurture your mind with great thoughts. To believe in the heroic makes heroes.” Reply Clifford APRIL 8, 2020 AT 9:50 PM An impressive share! I’ve just forwarded this onto a colleague who had been doing a little research on this. And he in fact ordered me lunch simply because I stumbled upon it for him… lol. So allow me to reword this…. Thanks for the meal!! But yeah, thanx for spending the time to talk about this subject here on your web page. Reply Lauren MAY 8, 2020 AT 6:19 AM Really helpful for a motivational tool I’m currently building! Thank you Reply Custom Search a sand path between grass with blue sky 101 Inspirational Words of Encouragement to Lift You Up 35 Inspirational Songs With Lyrics To Motivate And Inspire You 35 Inspirational Songs With Lyrics To Motivate And Inspire You Push ups (featured image) 10 Massive Benefits of Push Ups 25 Creative And Surprising Things To Do When You Feel Lonely 25 Creative And Surprising Things To Do When You Feel Lonely 7 Motivational Graduation Speeches. </p> 
+   </div> 
+  </section> 
+  <script type="text/javascript">
+     var preogressbar = document.getElementById("preogressbar"); 
+    var percentage = document.getElementById("percentage") ; 
+    
+   var totalHeight = document.body.scrollHeight - window.innerHeight; 
+   window.onscroll = function (){ 
+  var progress = (window.pageYOffset) / totalHeight * 100;
+ preogressbar.style.height = progress + "%";
+ percentage.innerHTML = "page scrolled " + Math.round(progress) + "%";
+  } 
+  
+ </script> 
+ 
+</body></html>
